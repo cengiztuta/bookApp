@@ -56,7 +56,7 @@ const HomePage = () => {
       >
         <GiHamburgerMenu size={"30px"} />{" "}
       </button>
-
+      {/* 
       <SideBar
         filterGenre={filterGenre}
         setFilterGenre={setFilterGenre}
@@ -69,7 +69,7 @@ const HomePage = () => {
         setBookData={setBookData}
         searchBook={searchBook}
         setSearchBook={setSearchBook}
-      />
+      /> */}
 
       <div className="books-container">
         <div className={`books ${filterMenu ? "" : "active"}`}>

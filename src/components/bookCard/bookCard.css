@@ -122,3 +122,74 @@
   align-items: center;
   height: 20px;
 }
+@media screen and (max-width: 1049px) {
+  .bookcard {
+    height: 350px;
+    width: 250px;
+    display: flex;
+    row-gap: 3px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px groove rgba(97, 109, 97, 0.3);
+    border-radius: 5px;
+  }
+  .img {
+    margin-top: 10px;
+    height: 270px;
+    width: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1.4s;
+  }
+  .descp {
+    height: 260px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1.4s;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .descp h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .descp h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .readmore {
+    align-self: flex-end;
+    background-color: none;
+    border: none;
+    background: none;
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+      rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 10px;
+    list-style: none;
+    transition: color 1s, background-color 1s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    vertical-align: middle;
+    margin-top: 20px;
+    padding: 6px 20px;
+  }
+}

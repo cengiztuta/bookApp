@@ -4,7 +4,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 .filter-button {
   position: absolute;
@@ -26,25 +25,10 @@
 .books-container {
   height: 100%;
   width: auto;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-.books {
-  margin-top: 40px;
-  height: 100%;
-  width: 1400px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 40px;
-  column-gap: 40px;
-  transition: width 0.4s linear;
-}
-
-.books.active {
-  width: 1650px;
-  transition: width 0.4s linear;
-  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .button-morebook {
@@ -58,4 +42,78 @@
   background: none;
   align-self: flex-end;
   font-size: 22px;
+}
+
+@media screen and (min-width: 1650px) {
+  .books {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
+    transition: width 0.4s linear;
+  }
+
+  .books.active {
+    width: auto;
+    transition: width 0.4s linear;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1649px) {
+  .books {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+    transition: width 0.4s linear;
+  }
+
+  .books.active {
+    width: 100%;
+    transition: width 0.4s linear;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .books {
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 10px;
+    transition: width 0.4s linear;
+    margin-top: 40px;
+  }
+
+  .books.active {
+    width: 100%;
+    transition: width 0.4s linear;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .books {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 30px;
+    transition: width 0.4s linear;
+  }
+
+  .books.active {
+    column-gap: 20px;
+    width: auto;
+    transition: width 0.4s linear;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
