@@ -106,7 +106,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 40px;
-    column-gap: 30px;
+    column-gap: 10px;
     transition: width 0.4s linear;
   }
 
@@ -114,6 +114,65 @@
     column-gap: 20px;
     width: auto;
     transition: width 0.4s linear;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .button-morebook {
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    margin-right: 13px;
+    margin-top: 20px;
+    position: relative;
+    background: none;
+    align-self: flex-end;
+    font-size: 16px;
+  }
+  .homepage {
+    min-height: 1255px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+  }
+}
+@media screen and (max-width: 540px) {
+  .books {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+    column-gap: 10px;
+    transition: width 0.4s linear;
+  }
+
+  .books.active {
+    column-gap: 20px;
+    width: auto;
+    transition: width 0.4s linear;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .button-morebook {
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    margin-right: 13px;
+    margin-top: 20px;
+    position: relative;
+    background: none;
+    align-self: flex-end;
+    font-size: 16px;
+  }
+  .homepage {
+    min-height: 1255px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
   }
 }

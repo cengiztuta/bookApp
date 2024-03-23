@@ -6,6 +6,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { useNavigate, Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 const Header = () => {
   const navigate = useNavigate();
   const {
@@ -90,7 +91,11 @@ const Header = () => {
           className="mobile-header-menu-button"
           onClick={() => setMobileMenu(!mobileMenu)}
         >
-          <GiHamburgerMenu size={"25px"} />{" "}
+          {mobileMenu ? (
+            <IoClose size={"25px"} />
+          ) : (
+            <GiHamburgerMenu size={"25px"} />
+          )}
         </button>
 
         {mobileMenu ? (
@@ -122,7 +127,10 @@ const Header = () => {
             {currentUser ? (
               <div className="header-currentUser-info">
                 <div className="userPic">
-                  <button className="mobile-currentUser" onClick={() => setUserInfo(true)}>
+                  <button
+                    className="mobile-currentUser"
+                    onClick={() => setUserInfo(true)}
+                  >
                     {currentUser.name}
                     <FaAngleDown
                       className={`user-button-icon ${userInfo ? "active" : ""}`}

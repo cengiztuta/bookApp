@@ -91,16 +91,4 @@ const BookDetail = () => {
 };
 
 export default BookDetail;
-{
-  /* <div
-        style={{
-          height: "450px",
-          width: "450px",
-          background: "green",
-          backgroundSize: "cover",
-        }}
-      >
-        <img src={selectedBook.image_url} />
-      </div>
-      <p>{selectedBook.authors}</p> */
-}
+

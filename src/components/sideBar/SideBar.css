@@ -172,7 +172,7 @@
     cursor: pointer;
   }
 }
-@media screen and (min-width: 720px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .sidebar-close-button {
     outline: none;
     border: none;
@@ -221,6 +221,180 @@
     position: relative;
     opacity: 1;
     max-height: 100%;
+  }
+
+  .show-all-button {
+    height: 30px;
+    width: 40px;
+  }
+
+  .format-container {
+    height: 40px;
+    position: relative;
+    transition: height 0.4s ease;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .filter-buttons {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    height: 40px;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    align-items: center;
+    transition: margin-top 0.4s, height 0.4s ease, opacity 0.4s ease;
+  }
+
+  .format-container.active {
+    height: 160px;
+    transition: height 0.3s ease;
+  }
+  .format-container.active .button-container {
+    height: 120px; /* İstediğiniz maksimum yükseklik */
+    opacity: 1;
+    transition: margin-top 0.4s, height 0.4s ease, opacity 0.4s ease;
+    margin-top: 10px;
+  }
+
+  .sort-container {
+    height: 40px;
+    position: relative;
+    transition: height 0.4s ease;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .sort-container.active {
+    height: 220px;
+    transition: height 0.3s ease;
+  }
+  .sort-container.active .button-container {
+    height: 160px; /* İstediğiniz maksimum yükseklik */
+    opacity: 1;
+    transition: margin-top 0.4s, height 0.4s ease, opacity 0.4s ease;
+    margin-top: 10px;
+  }
+  .genres-container {
+    padding: 5px;
+    height: 40px;
+    position: relative;
+    transition: height 0.4s ease;
+    margin-top: 10px;
+  }
+  .genres-container.active {
+    height: 300px;
+    transition: height 0.4s ease;
+  }
+  .genres-container.active .button-container {
+    height: 240px; /* İstediğiniz maksimum yükseklik */
+    opacity: 1;
+    transition: margin-top 0.3s, height 0.3s ease, opacity 0.3s ease;
+    margin-top: 10px;
+  }
+  .menu-button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    width: 80%;
+  }
+
+  .menu-button.active:hover {
+    background-color: #2980b9;
+  }
+
+  .menu-button.active {
+    background-color: #27ae60;
+  }
+
+  .sidebar-container {
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .sidebar.open .filtermenu-button {
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    border: none;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 150px;
+    position: absolute;
+    left: -205px;
+    height: 100%;
+    max-height: 1000px;
+    background-color: antiquewhite;
+    transition: left 0.4s linear, opacity 0.4s linear;
+    overflow-y: hidden;
+    border: 3px groove rgba(97, 109, 97, 0.3);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
+
+  .sidebar.open {
+    top: 0;
+    min-width: 150px;
+    left: 0;
+    height: auto;
+    transition: left 0.4s linear, opacity 0.4s linear;
+    position: relative;
+    opacity: 1;
+    max-height: 100%;
+  }
+  .sidebar-close-button {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  .currentuser-info h1 {
+    text-align: center;
+    font-style: italic;
+  }
+  .currentuser-info p {
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    font-style: italic;
+    margin-left: 10px;
   }
 
   .show-all-button {

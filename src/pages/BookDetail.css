@@ -81,3 +81,42 @@
   font-size: 30px;
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    height: auto;
+    width: auto;
+    padding: 41px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .book-image {
+    height: 100%;
+  }
+  .book-image img {
+    height: 350px;
+    width: auto;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  .book-detail-rating-container {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-left: 38px;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .book-detail-star {
+    height: 25px;
+  }
+  .book-detail-rating-number {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
