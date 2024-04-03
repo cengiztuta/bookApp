@@ -96,7 +96,7 @@
     transition: height 0.3s ease;
   }
   .format-container.active .button-container {
-    height: 120px; /* İstediğiniz maksimum yükseklik */
+    height: 120px; 
     opacity: 1;
     transition: margin-top 0.4s, height 0.4s ease, opacity 0.4s ease;
     margin-top: 10px;
@@ -114,7 +114,7 @@
     transition: height 0.3s ease;
   }
   .sort-container.active .button-container {
-    height: 160px; /* İstediğiniz maksimum yükseklik */
+    height: 160px; 
     opacity: 1;
     transition: margin-top 0.4s, height 0.4s ease, opacity 0.4s ease;
     margin-top: 10px;
@@ -131,7 +131,7 @@
     transition: height 0.4s ease;
   }
   .genres-container.active .button-container {
-    height: 240px; /* İstediğiniz maksimum yükseklik */
+    height: 240px; 
     opacity: 1;
     transition: margin-top 0.3s, height 0.3s ease, opacity 0.3s ease;
     margin-top: 10px;
@@ -270,7 +270,7 @@
     transition: height 0.3s ease;
   }
   .format-container.active .button-container {
-    height: 120px; /* İstediğiniz maksimum yükseklik */
+    height: 120px; 
     opacity: 1;
     transition: margin-top 0.4s, height 0.4s ease, opacity 0.4s ease;
     margin-top: 10px;
@@ -288,7 +288,7 @@
     transition: height 0.3s ease;
   }
   .sort-container.active .button-container {
-    height: 160px; /* İstediğiniz maksimum yükseklik */
+    height: 160px; 
     opacity: 1;
     transition: margin-top 0.4s, height 0.4s ease, opacity 0.4s ease;
     margin-top: 10px;
@@ -305,7 +305,7 @@
     transition: height 0.4s ease;
   }
   .genres-container.active .button-container {
-    height: 240px; /* İstediğiniz maksimum yükseklik */
+    height: 240px; 
     opacity: 1;
     transition: margin-top 0.3s, height 0.3s ease, opacity 0.3s ease;
     margin-top: 10px;
@@ -462,7 +462,7 @@
     transition: height 0.3s ease;
   }
   .sort-container.active .button-container {
-    height: 160px; /* İstediğiniz maksimum yükseklik */
+    height: 160px; 
     opacity: 1;
     transition: margin-top 0.4s, height 0.4s ease, opacity 0.4s ease;
     margin-top: 10px;
@@ -479,7 +479,7 @@
     transition: height 0.4s ease;
   }
   .genres-container.active .button-container {
-    height: 240px; /* İstediğiniz maksimum yükseklik */
+    height: 240px;
     opacity: 1;
     transition: margin-top 0.3s, height 0.3s ease, opacity 0.3s ease;
     margin-top: 10px;

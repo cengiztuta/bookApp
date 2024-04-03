@@ -5,7 +5,7 @@ const DataContext = createContext();
 export const DataProvider = ({ children }) => {
   const [bookData, setBookData] = useState([]);
   const [moreBook, setMoreBook] = useState(16);
-  const [filteredData, setFilteredData] = useState([]);
+  const [filteredData, setFilteredData] = useState(bookData);
   const [searchBook, setSearchBook] = useState("");
   const [format, setFormat] = useState("All");
   const [filterMenu, setFilterMenu] = useState(false);
@@ -49,6 +49,7 @@ export const DataProvider = ({ children }) => {
       .then((response) => {
         const data = response.data;
         setBookData(data);
+        setFilteredData(data);
       });
   };
   const getUserData = async () => {
